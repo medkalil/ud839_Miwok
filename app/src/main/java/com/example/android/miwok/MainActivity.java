@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
 
+
+
         // Find the View that shows the numbers category
         TextView numbers = (TextView) findViewById(R.id.numbers);
 
@@ -47,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
         // Find the View that shows the family category
         TextView family = (TextView) findViewById(R.id.family);
 
@@ -60,8 +64,8 @@ public class MainActivity extends AppCompatActivity {
 
                 // Start the new activity
                 startActivity(familyIntent);
-            }
-        });
+    }
+});
 
         // Find the View that shows the colors category
         TextView colors = (TextView) findViewById(R.id.colors);
@@ -94,5 +98,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(phrasesIntent);
             }
         });
+
+
     }
+
+    /*      Explicit Intent
+
+    public void OpenNumberList(View view) {
+        Intent numberIntent = new Intent(MainActivity.this,NumbersActivity.class);
+        startActivity(numberIntent);
+
+    }  */
+
+
+
 }
